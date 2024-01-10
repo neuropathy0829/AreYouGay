@@ -36,11 +36,11 @@ function playSound() {
 document.getElementById("yes-btn").addEventListener("click", function() {
   playSound(); // 撥放音效
   hideElements(); // 隱藏其他元素
-  document.getElementById("IamGay").style.display = 'block'; 
+  document.getElementById("Youaregay").style.display = 'block'; 
 });
 
 function hideElements() {
-  const elementsToHide = document.querySelectorAll('body > *:not(#IamGay)');
+  const elementsToHide = document.querySelectorAll('body > *:not(#Youaregay)');
   elementsToHide.forEach((element) => {
     element.style.display = 'none';
   });
